@@ -1,0 +1,26 @@
+{
+  "name": "tumara",
+  "description": "Create a restful webservice, modularizing cruds and dependency injection. Also, includes a privilege control.",
+  "tags": [
+    "tumara",
+    "restful",
+    "webservice",
+    "privilege"
+  ],
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fabiomartinazzo/tumara.git"
+  },
+  "bugs": {
+    "url": "git://github.com/fabiomartinazzo/tumara/issues"
+  },
+  "main": "tumara.js",
+  "author": {
+    "name": "Fábio Martinazzo",
+    "email": "fabiomartinazzo@gmail.com",
+    "url": "https://br.linkedin.com/in/fabiomartinazzo1"
+  },
+  "dependencies": {},
+  "readmeFilename": "README.md"
+}
