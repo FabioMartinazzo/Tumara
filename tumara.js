@@ -7,6 +7,7 @@ var following = require('./node_modules/core/following')
 var rollback = require('./node_modules/core/rollback')
 var error = require('./node_modules/error/error')
 var privbypass = require('./node_modules/privilege/privbypass')
+var logger = require('./node_modules/core/logger')
 
 var Tumara = {
 	app : null,
@@ -36,6 +37,7 @@ module.exports = {
 			callback()
 
 			config.getConfiguration().getApp().listen(config.getConfiguration().getPort())
+			logger.saveAccessLog(undefined, 'Aplicação rodando.')
 		})
 	},
 	getConfig : function() {
