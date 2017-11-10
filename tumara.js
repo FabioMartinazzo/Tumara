@@ -37,7 +37,7 @@ module.exports = {
 			callback()
 
 			config.getConfiguration().getApp().listen(config.getConfiguration().getPort())
-			logger.saveAccessLog(undefined, 'Aplicação rodando.')
+			logger.saveAccessLog(undefined, 'Aplicação rodando.', function(){ })
 		})
 	},
 	getConfig : function() {
@@ -51,6 +51,9 @@ module.exports = {
 	},
 	getSelf : function() {
 		return selfws
+	},
+	encapsuleForFollower : function(obj) {
+		following.makeObjFollower(obj, following.getGlobalCurrent())
 	},
 	getFollower : function(obj) {
 		return following.getCurrent(obj)
